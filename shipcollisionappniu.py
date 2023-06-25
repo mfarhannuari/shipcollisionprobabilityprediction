@@ -32,5 +32,5 @@ TechnicalFailure = st.number_input("Technical Failure (Yes = 1, No = 0)")
 btn = st.button("predict")
 
 if btn:
-    pred = model.predict(np.array([Daylight,Inexperience,NumberOfCrew,UnderstandingOfShipCharacteristic,UnderstandingOfWaterCondition,DualTask,VisualObservation,Master,ShipCommunication,Pilot,CrewCompetence,Uncertain,Fatigue,CrewHealth,NavcomEquipment,NavcomUtilized,UnderstandingOfNavcomSign,Manuveurability,DecisionMaking,SituationalAwareness,GoodSeamanship,PreventiveTiming,TechnicalFailure]).reshape(1,-1))
-    st.write(f"Your Ship will have: {pred}" )
+    pred = model.predict(np.array([Daylight,Inexperience,NumberOfCrew,UnderstandingOfShipCharacteristic,UnderstandingOfWaterCondition,DualTask,VisualObservation,Master,ShipCommunication,Pilot,CrewCompetence,Uncertain,Fatigue,CrewHealth,NavcomEquipment,NavcomUtilized,UnderstandingOfNavcomSign,Manuveurability,DecisionMaking,SituationalAwareness,GoodSeamanship,PreventiveTiming,TechnicalFailure]))
+    st.write(f"Your Ship will have: {pred}")
